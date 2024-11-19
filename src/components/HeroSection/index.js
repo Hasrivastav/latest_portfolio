@@ -4,6 +4,7 @@ import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, Hero
 import HeroImg from '../../images/HeroImage.jpg'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
+import Hero from '../../images/Hero.jpeg'
 
 const HeroSection = () => {
     return (
@@ -18,13 +19,22 @@ const HeroSection = () => {
                         <TextLoop>
                             I am a
                             <Span>
-                                <Typewriter
-                                    options={{
-                                        strings: Bio.roles,
-                                        autoStart: true,
-                                        loop: true,
-                                    }}
-                                />
+                            <div
+    style={{
+        background: 'linear-gradient(90deg, #6d8b2b, #77962b, #abcb5f)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+    }}
+>
+    <Typewriter
+        options={{
+            strings: Bio.roles,
+            autoStart: true,
+            loop: true,
+        }}
+    />
+</div>
+
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
@@ -33,7 +43,7 @@ const HeroSection = () => {
 
                     <HeroRightContainer id="Right">
 
-                        <Img src={HeroImg} alt="hero-image" />
+                        <Img src={Hero} alt="hero-image" />
                     </HeroRightContainer>
                 </HeroInnerContainer>
 

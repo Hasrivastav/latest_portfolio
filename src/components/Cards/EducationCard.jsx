@@ -36,10 +36,11 @@ text-overflow: ellipsis;
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     padding: 12px 16px;
     justify-content: space-between;
     position: relative;
+    background-color:#46561d;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@ const Card = styled.div`
         -webkit-line-clamp: unset;
 
     }
-    border: 0.1px solid #854CE6;
+    border: 0.1px solid #fff;
 `
 
 const Top = styled.div`

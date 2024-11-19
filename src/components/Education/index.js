@@ -26,6 +26,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
     position: relative;
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -93,8 +94,11 @@ const index = () => {
                                     <EducationCard education={education}/>
                                 </TimelineContent>
                                 <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    <TimelineDot variant="outlined"   sx={{
+            // Set the background color to white
+            borderColor: "white", // Make the border color white as well
+        }} />
+                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#fcffce' }} />}
                                 </TimelineSeparator>
                             </TimelineItem>
                         ))}
